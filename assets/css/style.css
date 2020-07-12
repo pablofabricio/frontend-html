@@ -61,10 +61,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-.container .logo {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+.menu .container .right {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .container .search input{
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -84,7 +88,6 @@ body {
     padding:10px;
      /* Firefox */
 }
-
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
     font-size:14px;
     font-family: Open Sans;
@@ -92,7 +95,6 @@ body {
     color: #000000;
     padding:10px;
 }
-
 ::-ms-input-placeholder { /* Microsoft Edge */
     font-size:14px;
     font-family: Open Sans;
@@ -101,22 +103,46 @@ body {
     padding:10px;
 }
 
-
-
-@media (max-width: 480px) { 
-    /* estilos aqui */
+.menu-login {
+    padding-left: 70px;
+    list-style:none; 
+    font-family: Open Sans;
+    font-size: 16px;
+}
+.menu-login li a {
+    color:#333; 
+    text-decoration:none; 
+    display: flex;
+    align-items: center;
 }
 
-
-@media (max-width: 767px) {
-    /* estilos aqui */
+.menu-login li a img{
+    padding-left: 5px;
 }
 
-@media (min-width: 768px) and (max-width: 979px) {
-    /* estilos aqui */
+.menu-login li a:hover { 
+    font-weight: bold;
+}
+.menu-login li ul {
+    position: absolute;  
+    display: none;
+    margin-top: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px #00000033;
+    background-color: #fff;
+    padding:15px;
+} 
+.menu-login li:hover ul, 
+.menu-login li.over ul {
+    display: block;
+}
+.menu-login li ul li { 
+    display: block;
+    padding: 15px;
+    font-size: 15px;
 }
 
-
-@media (min-width: 1200px) {
-   /* estilos aqui */
+.shopping {
+    padding-left: 70px;
+    cursor: pointer;
 }
