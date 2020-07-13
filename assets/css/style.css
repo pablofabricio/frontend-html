@@ -4,6 +4,7 @@ body {
     padding: 0;
 }
 
+/* Top Menu */
 .top-menu {
     display: flex;
     justify-content: center;
@@ -51,6 +52,7 @@ body {
     font-family: Open Sans;
 }
 
+/* Main menu */
 .menu {
     display: flex;
     justify-content: center;
@@ -126,12 +128,14 @@ body {
 .menu-login li ul {
     position: absolute;  
     display: none;
-    margin-top: 8px;
+    margin-top: 2px;
+    margin-right: 10px;
     border-radius: 5px;
     box-shadow: 0px 0px 6px #00000033;
     background-color: #fff;
     padding:15px;
 } 
+.menu-login,
 .menu-login li:hover ul, 
 .menu-login li.over ul {
     display: block;
@@ -145,4 +149,20 @@ body {
 .shopping {
     padding-left: 70px;
     cursor: pointer;
+}
+
+.shopping::after {
+    content: "+50";
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    background: #000;
+    position: absolute;
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 11px;
+    display: flex;
+    margin-top: -23px;
+    margin-left: 10px;
+    align-items: center;
 }
